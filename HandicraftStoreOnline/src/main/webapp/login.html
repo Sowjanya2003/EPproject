@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/login.css" />
+    <title>LOGIN PAGE</title>
+</head>
+<body>
+<section class="sub-header">
+            <nav>
+                <a href="home.html"><img src="images/logo.png"></a>
+            </nav>
+</section>
+    <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toogle-btn" onclick="login()">LogIn</button>
+                    <button type="button" class="toogle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="images/f.png">
+                    <img src="images/i.png">
+                    <img src="images/t.png">
+                </div>
+                <form id="login" class="input-group" action="login.jsp" method="get">
+                    <input type="text" class="input-field" placeholder="User name" name="uname" required>
+                    <input type="text" class="input-field" placeholder="Password" name="pwd" required><br>
+                    <a href="reset.html" >Forgot Password</a><br>
+                    <input type="checkbox" class="check-box"><span>Remember password</span>
+                    
+                    <button type="submit" class="submit-btn" onclick="home.html" value="submit">Log In</button>
+                </form>
+                <form id="register" class="input-group" action="register.jsp" method="get">
+                    <input type="text" name="uname" class="input-field" placeholder="User name" required>
+                    <input type="text" name="mb" class="input-field" placeholder="Mobile Number" required>
+                    <h4>What is your favourite colour?(Security)</h4>
+                    <input type="text" name="secque" class="input-field" placeholder="Answer" required>
+                    <input type="text" name="pwd" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn" onclick="login.html" value="submit">Register</button>
+                </form>
+            </div>
+
+        </div>
+        <script>
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+            var z=document.getElementById("btn");
+
+            function register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+        </script>
+</body>
+</html>

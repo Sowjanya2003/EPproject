@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>FEEDBACK</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<section class="sub-header">
+            <nav>
+                <a href="home.html"><img src="images/logo.png"></a>
+                <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html"><b>HOME</b></a></li>
+                        <li><a href="about.html"><b>ABOUT</b></a></li>
+                        <li><a href="product.html"><b>PRODUCTS</b></a></li>
+                        <li><a href="contact.html"><b>CONTACT</b></a></li>
+                        <li><a href="product.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href="feedback.html"><b>FEEDBACK</b></a></li>
+						<li><a href="mainhome.html"><b>LOGOUT</b></a></li>
+                    </ul>
+                </div>
+            </nav>
+</section>
+<center>
+	 <H1>Feedback Form</H1><BR>
+    <FORM action="feedback.jsp" method="get" enctype="text/plain">
+      Username : <INPUT type="text" name="uname" placeholder="Username"><BR><BR>
+      Mobile Number : <INPUT type="text" name="mb"  placeholder="Mobile Number">
+      <BR>
+      <BR>
+      <BR>
+        Comment :<BR>        
+        <TEXTAREA rows="6" cols="50" name="comment"></TEXTAREA>
+        <BR>
+        
+        <BR>
+        <button type="submit" class="submit-btn" onclick="feedback.html" value="submit">SEND FEEDBACK</button>
+    </FORM>
+   </center>
+</body>
+</html>
